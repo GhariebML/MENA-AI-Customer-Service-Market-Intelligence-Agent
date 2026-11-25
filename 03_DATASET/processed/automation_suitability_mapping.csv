@@ -1,0 +1,28 @@
+﻿intent,category,count,share_pct,automation_tier,recommended_ai_workflow,human_escalation_required,mean_words,mean_chars,colloquial_Q_pct,polite_P_pct,noise_typo_Z_pct,offensive_W_pct
+payment_issue,PAYMENT,4366,20.2749,Tier 4 - Human-in-the-Loop Priority,"Triage payment gateway error, collect transaction ID, escalate failed/double charges",Yes (financial risk),14.1,65.14,47.21,13.79,15.9,4.99
+create_account,ACCOUNT,2122,9.8542,Tier 3 - Authenticated Action,Guided onboarding workflow + validation + consent capture,No,11.21,53.93,40.29,13.43,16.73,5.0
+contact_customer_service,CONTACT,2055,9.543,Tier 4 - Human-in-the-Loop Priority,"Intent clarification, pre-collect context, route to right queue",Yes (explicit request),10.29,55.2,48.32,13.38,15.47,4.96
+get_invoice,INVOICES,1430,6.6407,Tier 2 - API Status Lookup,Fetch and deliver PDF/e-invoice via WhatsApp or email,No,9.39,44.63,47.55,14.34,15.38,4.97
+track_order,ORDER,1224,5.684,Tier 2 - API Status Lookup,Authenticated order/shipment API lookup (order ID + phone),Conditional (if delayed/lost),9.68,43.33,38.89,14.46,16.83,4.74
+get_refund,REFUNDS,1150,5.3404,Tier 4 - Human-in-the-Loop Priority,"Verify eligibility, check order status, escalate or trigger bounded auto-refund",Yes (financial approval),9.83,50.16,46.17,13.39,16.17,4.96
+contact_human_agent,CONTACT,1026,4.7646,Tier 4 - Human-in-the-Loop Priority,Immediate warm handoff with conversation summary to live agent,Yes (mandatory),9.91,48.77,30.7,10.23,16.18,4.09
+check_invoices,INVOICES,1013,4.7042,Tier 2 - API Status Lookup,Billing history retrieval from invoicing API,Conditional (disputed charge),9.21,41.05,46.3,13.52,15.99,4.94
+recover_password,ACCOUNT,986,4.5788,Tier 2 - API Status Lookup,Automated OTP / password-reset trigger,Conditional (locked account),9.93,49.84,43.0,12.37,15.52,4.97
+change_order,ORDER,926,4.3002,Tier 3 - Authenticated Action,Order modification before fulfillment cutoff via OMS API,Conditional (already shipped),10.24,49.76,65.33,13.71,14.36,4.97
+delete_account,ACCOUNT,913,4.2398,Tier 4 - Human-in-the-Loop Priority,"PDPL deletion request workflow, identity check, retention log",Yes (compliance/retention),9.72,45.66,45.13,13.69,14.35,4.93
+complaint,FEEDBACK,746,3.4643,Tier 4 - Human-in-the-Loop Priority,"Empathetic acknowledgement, structured case creation, urgent supervisor routing",Yes (reputation/escalation),11.21,57.0,33.91,13.54,15.55,4.96
+review,FEEDBACK,580,2.6934,Tier 3 - Authenticated Action,CSAT / review capture and sentiment tagging,Conditional (negative score),10.51,48.12,42.76,13.79,15.52,5.0
+check_refund_policy,REFUNDS,479,2.2244,Tier 1 - Knowledge-Base RAG,Policy retrieval from verified bilingual KB; zero write access,No (unless policy exception),9.75,51.07,36.95,13.78,18.58,4.8
+check_cancellation_fee,CANCELLATION_FEE,360,1.6718,Tier 1 - Knowledge-Base RAG,Fee rules and contract tier lookup via KB/plan rules,No (unless fee waiver requested),8.59,47.66,43.06,14.17,16.67,5.0
+delivery_options,DELIVERY,360,1.6718,Tier 1 - Knowledge-Base RAG,"Shipping tiers, COD availability, SLA zones via KB",No,9.57,50.52,41.67,14.17,13.33,5.0
+track_refund,REFUNDS,303,1.4071,Tier 2 - API Status Lookup,Refund ledger/gateway status check via CRM/ERP API,Conditional (if SLA breached),10.66,51.24,43.89,13.53,17.16,4.95
+switch_account,ACCOUNT,273,1.2678,Tier 3 - Authenticated Action,Plan/account switch workflow with confirmation,Conditional (downgrade/retention),10.39,50.84,46.89,13.92,14.29,4.76
+check_payment_methods,PAYMENT,270,1.2538,Tier 1 - Knowledge-Base RAG,Supported payment rail & country availability FAQ,No,9.0,44.87,44.81,14.07,18.15,4.81
+newsletter_subscription,NEWSLETTER,236,1.0959,Tier 3 - Authenticated Action,Opt-in / opt-out preference update with PDPL consent log,No,10.58,54.16,47.88,13.98,15.25,4.66
+delivery_period,DELIVERY,141,0.6548,Tier 1 - Knowledge-Base RAG,Estimated delivery SLA lookup by city/country,No,10.3,52.19,37.59,12.77,11.35,4.96
+edit_account,ACCOUNT,133,0.6176,Tier 3 - Authenticated Action,Authenticated profile update via API,No,9.14,44.66,50.38,12.78,15.79,4.51
+registration_problems,ACCOUNT,130,0.6037,Tier 1 - Knowledge-Base RAG,Guided troubleshooting + OTP/account verification flow,Conditional (if blocked),6.77,36.23,0.0,0.0,20.0,0.0
+change_shipping_address,SHIPPING,110,0.5108,Tier 3 - Authenticated Action,Address update via OMS/courier API prior to dispatch,Conditional (in transit),8.85,45.85,40.0,14.55,10.0,4.55
+set_up_shipping_address,SHIPPING,96,0.4458,Tier 3 - Authenticated Action,Structured address capture + geocoding validation,No,11.49,51.72,41.67,11.46,18.75,4.17
+place_order,ORDER,70,0.3251,Tier 3 - Authenticated Action,Conversational catalog + cart + checkout confirmation,No,7.74,32.81,47.14,12.86,17.14,4.29
+cancel_order,ORDER,36,0.1672,Tier 4 - Human-in-the-Loop Priority,"Cancellation eligibility check, retention option, OMS cancel or handoff",Yes (order state/fees),7.86,35.25,44.44,11.11,13.89,2.78

@@ -1,0 +1,133 @@
+{
+  "source_file_name": "20000-Utterances-Training-dataset-for-chatbots-virtual-assistant-Bitext-sample.csv",
+  "profiled_at_local_date": "2026-11-25",
+  "row_count": 21534,
+  "column_count": 4,
+  "columns": [
+    "flags",
+    "utterance",
+    "category",
+    "intent"
+  ],
+  "expected_fields_present": {
+    "flags": true,
+    "utterance": true,
+    "category": true,
+    "intent": true
+  },
+  "missing_values_by_column": {
+    "flags": 0,
+    "utterance": 0,
+    "category": 0,
+    "intent": 0
+  },
+  "exact_duplicate_rows": 12,
+  "duplicate_utterance_values_beyond_first": 21,
+  "unique_counts": {
+    "flags": 511,
+    "utterance": 21513,
+    "category": 11,
+    "intent": 27
+  },
+  "class_imbalance": {
+    "top_intent": {
+      "intent": "payment_issue",
+      "count": 4366,
+      "share_pct": 20.2749
+    },
+    "bottom_intent": {
+      "intent": "cancel_order",
+      "count": 36,
+      "share_pct": 0.1672
+    },
+    "max_to_min_intent_ratio": 121.28
+  },
+  "utterance_length_summary": {
+    "char_min": 10,
+    "char_median": 51.0,
+    "char_mean": 52.54,
+    "char_max": 128,
+    "word_min": 2,
+    "word_median": 10.0,
+    "word_mean": 10.86,
+    "word_max": 28
+  },
+  "category_counts": {
+    "PAYMENT": 4636,
+    "ACCOUNT": 4557,
+    "CONTACT": 3081,
+    "INVOICES": 2443,
+    "ORDER": 2256,
+    "REFUNDS": 1932,
+    "FEEDBACK": 1326,
+    "DELIVERY": 501,
+    "CANCELLATION_FEE": 360,
+    "NEWSLETTER": 236,
+    "SHIPPING": 206
+  },
+  "intent_counts": {
+    "payment_issue": 4366,
+    "create_account": 2122,
+    "contact_customer_service": 2055,
+    "get_invoice": 1430,
+    "track_order": 1224,
+    "get_refund": 1150,
+    "contact_human_agent": 1026,
+    "check_invoices": 1013,
+    "recover_password": 986,
+    "change_order": 926,
+    "delete_account": 913,
+    "complaint": 746,
+    "review": 580,
+    "check_refund_policy": 479,
+    "check_cancellation_fee": 360,
+    "delivery_options": 360,
+    "track_refund": 303,
+    "switch_account": 273,
+    "check_payment_methods": 270,
+    "newsletter_subscription": 236,
+    "delivery_period": 141,
+    "edit_account": 133,
+    "registration_problems": 130,
+    "change_shipping_address": 110,
+    "set_up_shipping_address": 96,
+    "place_order": 70,
+    "cancel_order": 36
+  },
+  "single_flag_counts": {
+    "B": 21534,
+    "L": 18752,
+    "I": 12766,
+    "C": 10911,
+    "Q": 9552,
+    "Z": 3412,
+    "P": 2888,
+    "M": 2836,
+    "D": 2596,
+    "S": 1884,
+    "W": 1047,
+    "E": 392
+  },
+  "top_15_flag_combinations": {
+    "BILC": 2752,
+    "BILQC": 2068,
+    "BL": 1253,
+    "BIL": 1042,
+    "BLC": 967,
+    "BLQC": 783,
+    "BILQ": 734,
+    "BLQ": 608,
+    "BILCZ": 511,
+    "BILQCZ": 396,
+    "BML": 374,
+    "BIC": 316,
+    "BILQD": 307,
+    "BIML": 278,
+    "BIQC": 274
+  },
+  "notes": [
+    "Counts in this file are computed strictly from the downloaded Kaggle CSV.",
+    "This dataset is English-only and is not a representative sample of Egypt, Saudi Arabia, or UAE customer demand.",
+    "No raw user utterance text is copied into summary JSON/MD outputs."
+  ]
+}

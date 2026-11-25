@@ -1,0 +1,12 @@
+# Exclude large binary bundle & local temp/cache files
+FINAL_UDACITY_SUBMISSION.zip
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+*.tmp
+~$*.docx
+~$*.xlsx
+~$*.pptx
+.DS_Store
+Thumbs.db

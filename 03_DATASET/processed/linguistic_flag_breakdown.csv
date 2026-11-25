@@ -1,0 +1,13 @@
+﻿flag_code,description,row_occurrences,share_of_rows_pct
+B,Basic syntactic structure,21534,100.0
+L,Lexical variation (synonyms),18752,87.0809
+I,Interrogative structure,12766,59.283
+C,Complex/Coordinated syntactic structure,10911,50.6687
+Q,Colloquial variation,9552,44.3578
+Z,"Noise (spelling, punctuation, run-on words)",3412,15.8447
+P,Politeness variation,2888,13.4113
+M,"Morphological variation (plurals, tenses)",2836,13.1699
+D,Indirect speech,2596,12.0554
+S,Syntactic structure variation,1884,8.749
+W,Offensive language,1047,4.8621
+E,Expanded abbreviations,392,1.8204
